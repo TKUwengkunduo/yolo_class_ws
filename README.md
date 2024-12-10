@@ -3,7 +3,7 @@
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/TKUwengkunduo/robot_vision_ws.git
+   git clone https://github.com/TKUwengkunduo/yolo_class_ws.git
    cd yolo_class_ws
    ```
 2. Build the docker
