@@ -62,6 +62,7 @@ RUN groupadd -g $GID $GROUP && \
 
 RUN echo "source /opt/ros/humble/setup.bash" >> /home/${USER}/.bashrc
 
+RUN pip3 install ultralytics
 
 
 #=========================================================
