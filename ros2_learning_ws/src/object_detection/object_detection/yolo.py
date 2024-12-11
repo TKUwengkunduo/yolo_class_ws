@@ -12,11 +12,11 @@ class YOLODetectionNode(Node):
         super().__init__('yolo_detection_node')
         self.subscription = self.create_subscription(
             Image,
-            '/rgb',
+            '',
             self.image_callback,
             10
         )
-        self.publisher = self.create_publisher(String, '/detections', 10)
+        self.publisher = self.create_publisher(String, '', 10)
         self.bridge = CvBridge()
         self.model = YOLO("yolov8n.pt")  # 加載 YOLO 模型
         self.get_logger().info("YOLO Detection Node has started.")
